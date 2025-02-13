@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Registro</title>
+</head>
+<body>
+<center>
+<form action="respuestas.php" method="POST">
+    <h1>Formulario de registro para Congreso de Ciencias Exactas de Ingeniería</h1>
+    <br><label><strong>Nombre</strong></label> <input type="text" name="nombre" /></br>
+    <br><label><strong>Institucion</strong></label> <input type="text" name="institucion" /></br>
+    <br><label><strong>Edad</strong></label> <input type="number" name="edad" /></br>
+    
+    <p><h3>Sexo:</h3></p>
+    <input type="radio" name="sexo" value="M">Masculino
+    <input type="radio" name="sexo" value="F">Femenino</br>
+    
+    <p><h3>Area de interes:</h3></p>
+    <input type="checkbox" name="interes[]" value="inteligencia_artificial"> Inteligencia Artificial <br>
+    <input type="checkbox" name="interes[]" value="programacion"> Programación <br>
+    <input type="checkbox" name="interes[]" value="redes"> Redes <br>
+
+    <br><label><strong>Fecha de Asistencia:</strong></label> <input type="date" name="fecha_asistencia" /></br>
+
+    <p><h3>Cuántos días vas a asistir:</h3></p>
+    <select name="dias_asistencia">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select> <br>
+    
+    <br><label><strong>Correo Electrónico:</strong></label> <input type="email" name="email" /></br>
+
+    <br><button type="submit">Enviar</button> &nbsp;&nbsp;&nbsp;
+    <button type="reset">Cancelar</button>
+</form>
+</center>
+</body>
+</html>
